@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <title>S&T properties</title>
+        <title>ST & CO properties</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -13,64 +13,108 @@
   <body>
     <div style="background-image: url('data:image/png;base64,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');">
         <div class="header">
-          <a href="#default" class="logo">S&T properties</a>
+          <a href="#default" class="logo">ST & CO properties</a>
           <div class="header-right">
             <a class="active" href="#home">Home</a>
             <a href="#news">News</a>
             <a href="#users">Users</a>
             <a href="#admin">Admin</a>
+            <a href="#customer care">customer care</a>
           </div>
         </div>
-      
-        <div class="card">
-          <img src="img_avatar.png" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h3><b>Owner</b></h3> 
-           <p>Name : Sergio
-             Surname:Pillay
-             Email:sergio@s&tproperties.com
-             Cellphone:061 416 8223</p>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Add ID</button>
+          <div id="myDropdown" class="dropdown-content">
+            <form action="/action_page.php">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <label for="fname">Qualification:</label><br>
+              <input type="text" id="fname" name="fname" value="eg.painter"><br>
+              <label for="lname">contact details:</label><br>
+              <input type="text" id="lname" name="lname" value="number"><br><br>
+              <input type="submit" value="Submit">
+            </form> 
           </div>
-        </div> 
-       
-        <button id="myBtn">extra information</button>
-        <div id="myModal" class="modal">
-    
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>18 Golden road,Retreat</p>
-            <p>Taylor Pillay</p>
-            <p>wife</p>
-            <p>076 851 7845 , taylorpillay@icloud.com</p>
-          </div>
-          <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-              modal.style.display = "block";
-            }
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
+        </div>        
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
               }
             }
-            </script>
-        </div> 
+          }
+        }
+        </script>
+      <div class="row">
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
+                <h3><b>Owner</b></h3> 
+                <p>Name : Sergio
+                  Surname:Pillay
+                  Email:sergio@s&tproperties.com
+                  Cellphone:061 416 8223</p>
+              </div>
+              <div class="flip-card-back">
+                <button class="button button3">Delete ID</button>
+                <button id="myBtn">extra information</button> 
+                <div id="myModal" class="modal">
+    
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>18 Golden road,Retreat</p>
+                  <p>Taylor Pillay</p>
+                  <p>wife</p>
+                  <p>076 851 7845 , taylorpillay@icloud.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+                
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+          <div class="column"> 
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -82,14 +126,16 @@
                    Cellphone:061 522 3842</p>
               </div>
               <div class="flip-card-back">
-                <p>next of kin: Nadia</p>
-                <p>next of kin relatioship: mother</p>
-                <P>cell no:062 412 3752</P>
+                <p>next of kin: Kim Le Fluer</p>
+                <p>next of kin relatioship: wife</p>
+                <P>cell no:062 412 3752, kimmylf@icloud.com</P>
+                <button class="button button3">Delete ID</button>
               </div>
             </div>
           </div>
-        <div class="column">
-        <div class="flip-card">
+          </div>
+          <div class="column">
+          <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
@@ -100,28 +146,32 @@
                    Cellphone:076 536 4172</p> 
               </div>
               <div class="flip-card-back">
-                <p>next of kin: Erin </p>
+                <p>next of kin: Erin Hendricks </p>
                 <p>next of kin relatioship:wife</p>
-                <P>cell no:062 412 3752</P>
+                <P>cell no:062 412 3752 , Erinh@icloud.com</P>
+                <button class="button button3">Delete ID</button>
               </div>
             </div>
         </div>
         </div>
+      </div>
+      <div class="row2">
         <div class="column">
         <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;"> 
-                <h1>Designer</h1>
+                <h3>Designer</h3>
                 <p>Name : Tamryn
-                   Surname: Christians
+                   Surname: Brown
                    Tammy@s&tproperties.com
                    Cellphone:083 573 4592</p> 
               </div>
               <div class="flip-card-back">
-                <p>next of kin: Chris </p>
+                <p>next of kin: Chris Brown</p>
                 <p>next of kin relatioship:husband</p>
-                <P>cell no:062 412 3752</P>
+                <P>cell no:062 412 3752, Cbrown@icloud.com</P>
+                <button class="button button3">Delete ID</button>
               </div>
             </div>
         </div>
@@ -138,9 +188,10 @@
                    Cellphone:076 417 6345</p>
               </div>
               <div class="flip-card-back">
-                <p>next of kin: Aiden </p>
+                <p>next of kin: Aiden Thomas</p>
                 <p>next of kin relatioship: husband</p>
-                <P>cell no:062 412 3752</P>
+                <P>cell no:062 412 3752, aidenT@icloud.com</P>
+                <button class="button button3">Delete ID</button>
               </div>
             </div>
         </div>
@@ -157,13 +208,15 @@
                    Cellphone:061 332 4581</p>
               </div>
               <div class="flip-card-back">
-                <p>next of kin: jordan </p>
+                <p>next of kin: jordan Hendricks </p>
                 <p>next of kin relatioship: wife</p>
-                <P>cell no:062 412 3752</P>
+                <P>cell no:062 412 3752, jordanH@icloud.com</P>
+                <button class="button button3">Delete ID</button>
               </div>
             </div>
         </div>
         </div>
+      </div> 
     </div>
   </body>
 </html>
