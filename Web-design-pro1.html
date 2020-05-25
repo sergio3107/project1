@@ -34,17 +34,16 @@
               <input type="text" id="fname" name="fname" value="eg.painter"><br>
               <label for="lname">contact details:</label><br>
               <input type="text" id="lname" name="lname" value="number"><br><br>
-              <input type="submit" value="Submit">
+              <button class="button button3">submit</button>
             </form> 
           </div>
         </div>        
-        <script>
+      <script>
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
+        }       
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
           if (!event.target.matches('.dropbtn')) {
@@ -54,148 +53,127 @@
               var openDropdown = dropdowns[i];
               if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
+                alert(myFunction);
               }
             }
           }
         }
-        </script>
+      </script>
       <div class="row">
         <div class="column">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
-                <h3><b>Owner</b></h3> 
-                <p>Name : Sergio
-                  Surname:Pillay
-                  Email:sergio@s&tproperties.com
-                  Cellphone:061 416 8223</p>
-              </div>
-              <div class="flip-card-back">
-                <button class="button button3">Delete ID</button>
-                <button id="myBtn">extra information</button> 
-                <div id="myModal" class="modal">   
+          <div class="card">
+            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Owner & Architect</b></h4> 
+              <p>
+                Name : Sergio
+                Surname:Pillay
+                Email:SP@s&tproperties.com
+                Cellphone:061 522 3842
+              </p>
+              <button type="button" onclick="alert('are you sure')">Delete ID</button>
+              <button id="myBtn">extra information</button> 
+              <div id="myModal" class="modal">   
                 <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p>18 Golden road,Retreat</p>
-                  <p>Taylor Pillay</p>
-                  <p>wife</p>
-                  <p>076 851 7845 , taylorpillay@icloud.com</p>
-                </div>
+                <span class="close">&times;</span>
+                <p>18 Golden road,Retreat</p>
+                <p>Taylor Pillay</p>
+                <p>wife</p>
+                <p>076 851 7845 , taylorpillay@icloud.com</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="column"> 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
-                <h3><b>Co Owner</b></h3>
-                <p>Name : Tristan
-                   Surname:Le Fluer
-                   Email:tflake@s&tproperties.com
-                   Cellphone:061 522 3842</p>
-              </div>
-              <div class="flip-card-back">
-                <button class="button button3">Delete ID</button>
-                <button id="myBtn">extra information</button> 
-                <div id="myModal" class="modal">
+          </div>                    
+        </div>                 
+        <div class="column">
+          <div class="card">
+            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Co Owner</b></h4> 
+              <p>Name : Tristan
+                Surname:Le Fluer
+                Email:tflake@s&tproperties.com
+                Cellphone:061 522 3842</p> 
+              <button type="button" onclick="alert('are you sure')">Delete ID</button>
+              <button id="myBtn">extra information</button> 
+              <div id="myModal" class="modal">   
                 <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p>Kim Le Fluer</p>
-                  <p>wife</p>
-                  <P>062 412 3752 , kimmylf@icloud.com</P>                  
-                </div>
-              </div>
+                <span class="close">&times;</span>
+                <p>18 Golden road,constantia</p>
+                <p>Taylor le Fluer</p>
+                <p>wife</p>
+                <p>076 851 7845 , taylorLF@icloud.com</p>
               </div>
             </div>
-          </div>
+          </div>          
         </div>
-      </div>
+      </div>      
       <div class="row2">
         <div class="column">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
-                <h3>Engineer</h3>
-                <p>Name : Keaton
-                   Surname: Hendricks
-                   Email:keaton@s&tproperties.com
-                   Cellphone:076 536 4172</p> 
-              </div>
-              <div class="flip-card-back">
+          <div class="card">
+            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Engineer</b></h4> 
+              <p>Name : Keaton
+                Surname: Hendricks
+                Email:keaton@s&tproperties.com
+                Cellphone:076 536 4172</p>
+              <button type="button" onclick="alert('are you sure')">Delete ID</button>
+              <button id="myBtn">extra information</button> 
+              <div id="myModal" class="modal">   
+                <div class="modal-content">
+                <span class="close">&times;</span>
                 <p>next of kin: Erin Hendricks </p>
                 <p>next of kin relatioship:wife</p>
                 <P>cell no:062 412 3752 , Erinh@icloud.com</P>
-                <button class="button button3">Delete ID</button>
+              </div> 
               </div>
-            </div>
-          </div>
+          </div>          
+        </div>                  
         </div>
         <div class="column">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;"> 
-                <h3>Designer</h3>
-                <p>Name : Tamryn
-                   Surname: Brown
-                   Tammy@s&tproperties.com
-                   Cellphone:083 573 4592</p> 
-              </div>
-              <div class="flip-card-back">
+          <div class="card">
+            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Designer</b></h4> 
+              <p>Name : Tamryn
+                Surname: Brown
+                Tammy@s&tproperties.com
+                Cellphone:083 573 4592</p>
+              <button type="button" onclick="alert('are you sure')">Delete ID</button>
+              <button id="myBtn">extra information</button> 
+              <div id="myModal" class="modal">   
+                <div class="modal-content">
+                <span class="close">&times;</span>
                 <p>next of kin: Chris Brown</p>
                 <p>next of kin relatioship:husband</p>
                 <P>cell no:062 412 3752, Cbrown@icloud.com</P>
-                <button class="button button3">Delete ID</button>
-              </div>
+              </div> 
             </div>
-        </div>
-        </div>
-      </div>
-      <div class="row3">
+          </div>
+        </div>          
+      </div>          
+      <div class="row3"> 
         <div class="column">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
-                <h3>Finance & Accountant</h3>
-                <p>Name : Alex 
-                   Surname: Thomas
-                   Email:Alex@s&tproperties.com
-                   Cellphone:076 417 6345</p>
-              </div>
-              <div class="flip-card-back">
+          <div class="card">
+            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Finance & Accountant</b></h4> 
+              <p>Name : Alex 
+                Surname: Thomas
+                Email:Alex@s&tproperties.com
+                Cellphone:076 417 6345</p>
+              <button type="button" onclick="alert('are you sure')">Delete ID</button>
+              <button id="myBtn">extra information</button> 
+              <div id="myModal" class="modal">   
+                <div class="modal-content">
+                <span class="close">&times;</span>
                 <p>next of kin: Aiden Thomas</p>
                 <p>next of kin relatioship: husband</p>
                 <P>cell no:062 412 3752, aidenT@icloud.com</P>
-                <button class="button button3">Delete ID</button>
-              </div>
+              </div> 
             </div>
-        </div>
-        </div>
-        <div class="column">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
-                <h3>Architect & Forman</h3>
-                <p>Name : Queron
-                   Surname: Hendricks
-                   Email:Queron@s&tproperties.com
-                   Cellphone:061 332 4581</p>
-              </div>
-              <div class="flip-card-back">
-                <p>next of kin: jordan Hendricks </p>
-                <p>next of kin relatioship: wife</p>
-                <P>cell no:062 412 3752, jordanH@icloud.com</P>
-                <button class="button button3">Delete ID</button>
-              </div>
-            </div>
-        </div>
-        </div>
+          </div>          
+        </div>   
       </div>
       <script>
         // Get the modal
